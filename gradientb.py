@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 # -*- coding: utf-8 -*-
+
+# -*- coding: utf-8 -*-
 #The first thing to do is to import the relevant packages
 # that I will need for my script, 
 #these include the Numpy (for maths and arrays)
@@ -11,7 +13,7 @@
 import csv as csv 
 import numpy as np
 # Import the random forest package
-from sklearn.ensemble import RandomForestClassifier 
+from sklearn.ensemble import GradientBoostingClassifier
 
 #Open up the csv file in to a Python object
 train_file_object = csv.reader(open('./csv/data/train.csv', 'rb')) 
@@ -94,19 +96,19 @@ test_data = np.delete(test_data,[1,6,8],1) # Remove the name data, cabin and tic
 # Create the random forest object which will include all the parameters
 # for the fit
 
-forest = RandomForestClassifier(n_estimators = 100)
+gb= GradientBoostingClassifier(n_estimators = 100)
 
 # Fit the training data to the training output and create the decision
 # trees
-forest = forest.fit(train_data[0::,1::],train_data[0::,0])
+gb = gb.fit(train_data[0::,1::],train_data[0::,0])
 
 # Take the same decision trees and run on the test data
-output = forest.predict(test_data)
+output = gb.predict(test_data)
 
 print output
 
 #write to csv
-fdescriptor = open('./csv/results/randomforestbasedmodelpy.csv',"wb")
+fdescriptor = open('./csv/results/gradientboostingbasedmodelpy.csv',"wb")
 test=open('./csv/data/test.csv', 'rb')
 open_file_object = csv.writer(fdescriptor)
 test_file_object = csv.reader(test)

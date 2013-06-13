@@ -92,12 +92,12 @@ for row in test_file_obect:                   #we are going to loop
   
   if row[2] == 'female':                             #If the passenger is female
         row.insert(0,                                   #at element 0, insert
-             int(survival_table[0,float(row[0])-1, \    #the prediction from
+             int(survival_table[0,float(row[0])-1,     #the prediction from
              bin_fare])) #Insert the prediciton         #survival table
         open_file_object.writerow(row)                  #And write out row          
-    else:
-        row.insert(0,\
-             int(survival_table[1,float(row[0])-1, \
+  else:
+        row.insert(0,
+             int(survival_table[1,float(row[0])-1, 
              bin_fare]))                               
                                                        
         open_file_object.writerow(row)
