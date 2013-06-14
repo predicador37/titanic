@@ -94,7 +94,7 @@ test_data = np.delete(test_data,[1,6,8],1) # Remove the name data, cabin and tic
 # Create the random forest object which will include all the parameters
 # for the fit
 
-forest = RandomForestClassifier(n_estimators = 100)
+forest = RandomForestClassifier(n_estimators = 1000)
 
 # Fit the training data to the training output and create the decision
 # trees

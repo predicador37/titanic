@@ -36,6 +36,35 @@ test_data = np.array(test_data) 	         #Then convert from a list to an array
 			         #Be aware that each item is currently
                                  #a string in this format                                 
                                  
+#data extending
+#combine siblings and parch into "family" field
+print train_data.shape
+ztrain= np.zeros((train_data.shape[0],1), dtype=train_data.dtype)
+print ztrain.shape
+np.c_[train_data,ztrain]
+print train_data.shape
+train_data[(train_data[0::,5]!=0) | (train_data[0::,6]!=0),11] = 1
+train_data[train_data[0::,11] == '',11] = 0
+print train_data
+
+print test_data.shape
+ztest= np.zeros((test_data.shape[0],1))
+np.concatenate((test_data,ztest), axis=1)
+test_data[(test_data[0::,4]!=0) | (test_data[0::,5]!=0),10] = 1
+test_data[train_data[0::,10] == '',10] = 0
+
+#derive title field from name
+np.concatenate((train_data,ztrain), axis=1)
+train_data["Mr" in train_data[0::,2],12]=1
+train_data["Mrs" in train_data[0::,2],12]=2
+train_data["Miss" in train_data[0::,2],12]=3                                 
+train_data["Master" in train_data[0::,2],12]=4
+
+np.concatenate((test_data,ztest), axis=1)
+test_data["Mr" in test_data[0::,2],11]=1
+test_data["Mrs" in test_data[0::,2],11]=2
+test_data["Miss" in test_data[0::,2],11]=3                                 
+test_data["Master" in test_data[0::,2],11]=4
                                  
 #data mapping
 #Map male and female to 1 and 0, respectively
@@ -104,7 +133,7 @@ gb = gb.fit(train_data[0::,1::],train_data[0::,0])
 
 # Take the same decision trees and run on the test data
 output = gb.predict(test_data)
-
+train_output = gb.predict(train_data[0::,1::])
 print output
 
 #write to csv
@@ -115,13 +144,32 @@ test_file_object = csv.reader(test)
 test_file_object.next()
 
 
+
 i = 0
 for row in test_file_object:
     row.insert(0,output[i].astype(np.uint8))
     open_file_object.writerow(row)
     i += 1
 
+
 test.close()
 fdescriptor.close()
+
+#generate train result file in order to calculate accuracy
+
+checkdescriptor = open('./csv/results/gradientboostingcheckpy.csv',"wb")
+train=open('./csv/data/train.csv', 'rb')
+open_check_object = csv.writer(checkdescriptor)
+train_file_object = csv.reader(train)
+train_file_object.next()
+
+j = 0
+for row in train_file_object:
+    row.insert(0,train_output[j].astype(np.uint8))
+    open_check_object.writerow(row)
+    j += 1
+
+train.close()
+checkdescriptor.close()
 
 print "EOP"
