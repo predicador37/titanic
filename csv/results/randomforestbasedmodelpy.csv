@@ -16,7 +16,7 @@
 1,2,"del Carlo, Mrs. Sebastiano (Argenia Genovesi)",female,24,1,0,SC/PARIS 2167,27.7208,,C
 0,2,"Keane, Mr. Daniel",male,35,0,0,233734,12.35,,Q
 1,3,"Assaf, Mr. Gerios",male,21,0,0,2692,7.225,,C
-0,3,"Ilmakangas, Miss. Ida Livija",female,27,1,0,STON/O2. 3101270,7.925,,S
+1,3,"Ilmakangas, Miss. Ida Livija",female,27,1,0,STON/O2. 3101270,7.925,,S
 0,3,"Assaf Khalil, Mrs. Mariana (Miriam"")""",female,45,0,0,2696,7.225,,C
 1,1,"Rothschild, Mr. Martin",male,55,1,0,PC 17603,59.4,,C
 1,3,"Olsen, Master. Artur Karl",male,9,0,1,C 17368,3.1708,,S
@@ -33,7 +33,7 @@
 1,3,"Dean, Mrs. Bertram (Eva Georgetta Light)",female,33,1,2,C.A. 2315,20.575,,S
 0,3,"Johnston, Mrs. Andrew G (Elizabeth Lily"" Watson)""",female,,1,2,W./C. 6607,23.45,,S
 1,1,"Mock, Mr. Philipp Edmund",male,30,1,0,13236,57.75,C78,C
-0,3,"Katavelas, Mr. Vassilios (Catavelas Vassilios"")""",male,18.5,0,0,2682,7.2292,,C
+1,3,"Katavelas, Mr. Vassilios (Catavelas Vassilios"")""",male,18.5,0,0,2682,7.2292,,C
 1,3,"Roth, Miss. Sarah A",female,,0,0,342712,8.05,,S
 0,3,"Cacic, Miss. Manda",female,21,0,0,315087,8.6625,,S
 0,3,"Sap, Mr. Julius",male,25,0,0,345768,9.5,,S
@@ -102,7 +102,7 @@
 0,2,"Weisz, Mr. Leopold",male,27,1,0,228414,26,,S
 0,3,"Foley, Mr. William",male,,0,0,365235,7.75,,Q
 0,3,"Johansson Palmquist, Mr. Oskar Leander",male,26,0,0,347070,7.775,,S
-0,3,"Thomas, Mrs. Alexander (Thamine Thelma"")""",female,16,1,1,2625,8.5167,,C
+1,3,"Thomas, Mrs. Alexander (Thamine Thelma"")""",female,16,1,1,2625,8.5167,,C
 0,3,"Holthen, Mr. Johan Martin",male,28,0,0,C 4001,22.525,,S
 0,3,"Buckley, Mr. Daniel",male,21,0,0,330920,7.8208,,Q
 0,3,"Ryan, Mr. Edward",male,,0,0,383162,7.75,,Q
@@ -111,7 +111,7 @@
 0,2,"Stanton, Mr. Samuel Ward",male,41,0,0,237734,15.0458,,C
 1,3,"Shine, Miss. Ellen Natalia",female,,0,0,330968,7.7792,,Q
 1,1,"Evans, Miss. Edith Corse",female,36,0,0,PC 17531,31.6792,A29,C
-1,3,"Buckley, Miss. Katherine",female,18.5,0,0,329944,7.2833,,Q
+0,3,"Buckley, Miss. Katherine",female,18.5,0,0,329944,7.2833,,Q
 1,1,"Straus, Mrs. Isidor (Rosalie Ida Blun)",female,63,1,0,PC 17483,221.7792,C55 C57,S
 0,3,"Chronopoulos, Mr. Demetrios",male,18,1,0,2680,14.4542,,C
 0,3,"Thomas, Mr. John",male,,0,0,2681,6.4375,,C
@@ -163,7 +163,7 @@
 1,2,"Wright, Miss. Marion",female,26,0,0,220844,13.5,,S
 1,3,"Pearce, Mr. Ernest",male,,0,0,343271,7,,S
 0,2,"Peruschitz, Rev. Joseph Maria",male,41,0,0,237393,13,,S
-1,3,"Kink-Heilmann, Mrs. Anton (Luise Heilmann)",female,26,1,1,315153,22.025,,S
+0,3,"Kink-Heilmann, Mrs. Anton (Luise Heilmann)",female,26,1,1,315153,22.025,,S
 0,1,"Brandeis, Mr. Emil",male,48,0,0,PC 17591,50.4958,B10,C
 0,3,"Ford, Mr. Edward Watson",male,18,2,2,W./C. 6608,34.375,,S
 1,1,"Cassebeer, Mrs. Henry Arthur Jr (Eleanor Genevieve Fosdick)",female,,0,0,17770,27.7208,,C
@@ -179,7 +179,7 @@
 1,2,"Becker, Mrs. Allen Oliver (Nellie E Baumgardner)",female,36,0,3,230136,39,F4,S
 1,1,"Compton, Mrs. Alexander Taylor (Mary Eliza Ingersoll)",female,64,0,2,PC 17756,83.1583,E45,C
 0,2,"McCrie, Mr. James Matthew",male,30,0,0,233478,13,,S
-1,1,"Compton, Mr. Alexander Taylor Jr",male,37,1,1,PC 17756,83.1583,E52,C
+0,1,"Compton, Mr. Alexander Taylor Jr",male,37,1,1,PC 17756,83.1583,E52,C
 1,1,"Marvin, Mrs. Daniel Warner (Mary Graham Carmichael Farquarson)",female,18,1,0,113773,53.1,D30,S
 0,3,"Lane, Mr. Patrick",male,,0,0,7935,7.75,,Q
 1,1,"Douglas, Mrs. Frederick Charles (Mary Helene Baxter)",female,27,1,1,PC 17558,247.5208,B58 B60,C
@@ -234,7 +234,7 @@
 0,3,"Linehan, Mr. Michael",male,,0,0,330971,7.8792,,Q
 1,1,"Cumings, Mr. John Bradley",male,39,1,0,PC 17599,71.2833,C85,C
 0,3,"Vendel, Mr. Olof Edvin",male,20,0,0,350416,7.8542,,S
-0,1,"Warren, Mr. Frank Manley",male,64,1,0,110813,75.25,D37,C
+1,1,"Warren, Mr. Frank Manley",male,64,1,0,110813,75.25,D37,C
 1,3,"Baccos, Mr. Raffull",male,20,0,0,2679,7.225,,C
 1,2,"Hiltunen, Miss. Marta",female,18,1,1,250650,13,,S
 1,1,"Douglas, Mrs. Walter Donald (Mahala Dutton)",female,48,1,0,PC 17761,106.425,C86,C
@@ -345,7 +345,7 @@
 0,3,"van Billiard, Master. James William",male,,1,1,A/5. 851,14.5,,S
 1,3,"Abelseth, Miss. Karen Marie",female,16,0,0,348125,7.65,,S
 0,2,"Botsford, Mr. William Hull",male,26,0,0,237670,13,,S
-0,3,"Whabee, Mrs. George Joseph (Shawneene Abi-Saab)",female,38,0,0,2688,7.2292,,C
+1,3,"Whabee, Mrs. George Joseph (Shawneene Abi-Saab)",female,38,0,0,2688,7.2292,,C
 0,2,"Giles, Mr. Ralph",male,24,0,0,248726,13.5,,S
 1,2,"Walcroft, Miss. Nellie",female,31,0,0,F.C.C. 13528,21,,S
 1,1,"Greenfield, Mrs. Leo David (Blanche Strouse)",female,45,0,1,PC 17759,63.3583,D10 D12,C
